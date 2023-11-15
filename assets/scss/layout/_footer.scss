@@ -1,0 +1,79 @@
+footer{
+    padding: 80px 0 0;
+    .imgbox{
+        width: 150px;
+    }
+    p{
+        color: #5E5E5E;
+        margin: 32px 0;
+        line-height: 1.4;
+    }
+    .social{
+        display: flex;
+        gap: 0 16px;
+        li{
+            &:hover{
+                animation-iteration-count: 0.5;
+                animation-direction: alternate;
+                animation-iteration-count: 1;
+                animation-duration: 0.6s;
+                animation-name: circle;
+                animation-timing-function: ease-out;
+
+            }
+            i{
+                color: #a0a0a0;
+            }
+        }
+    }
+    h2{
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    li{
+        margin: 24px 0;
+        a{
+            text-decoration: none;
+            color: #8f8f8f;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .underline{
+        text-decoration: underline;
+        font-size: 14px;
+        color: #8f8f8f;
+    }
+    span{
+        font-size: 24px;
+        font-weight: 700;
+        color: #004274;
+        text-decoration: underline;
+    }
+    .col-md-12{
+        background-color: #f2f6f6;
+    }
+    .textbox{
+        padding: 16px 0;
+        p{
+            margin: 0;
+            font-size: 14px;
+            i{
+                color: #2a7da7;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    @keyframes circle{
+        from{
+            rotate: y -0deg;
+        }
+        to{
+            rotate: y -180deg;
+        }
+    }
+}

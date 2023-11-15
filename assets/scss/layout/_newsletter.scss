@@ -1,0 +1,81 @@
+#newsletter {
+    min-height: 60vh;
+    background-color: #004274;
+    display: flex;
+    flex-wrap: wrap;
+    .leftside {
+        width: 50%;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 100px;
+        .textbox {
+            input::placeholder {
+                color: #ffffff;
+            }
+            h2 {
+                font-size: 40px;
+            }
+            h3 {
+                font-size: 18px;
+                margin: 20px 0 40px;
+                line-height: 1.4;
+            }
+            input {
+                color: #ffffff;
+                background: none;
+                border: 0;
+                border-bottom: 2px solid #BECCD6;
+                padding-bottom: 8px;
+                width: 420px;
+            }
+            .btn {
+                display: block;
+                width: 120px;
+                background-color: #00AEFF;
+                color: #ffffff;
+                padding: 10px 0;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    .rightside {
+        background-image: url("https://preview.colorlib.com/theme/konato/assets/img/gallery/subscribe-img.jpg.webp");
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+    }
+    @media screen and (max-width: 992px){
+        .leftside{
+            width: 100%;
+            padding: 48px 24px;
+            justify-content: start;
+            .textbox{
+                h3{
+                    width: 550px;
+                }
+                input{
+                    width: 550px;
+                }
+            }
+        }
+        .rightside{
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+    @media screen and (max-width: 576px){
+        .leftside{
+            .textbox{
+                position: relative;
+                h3, input{
+                    position: relative;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

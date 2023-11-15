@@ -1,0 +1,110 @@
+#properties {
+    padding: 96px 0;
+
+    .parent1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        .textbox {
+            h2 {
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+
+        }
+    }
+
+    .parent2 {
+        width: 100%;
+        display: flex;
+        gap: 0 12px;
+        padding: 0 80px;
+
+        .card {
+            width: 33.3333%;
+            border-radius: 0;
+            border-bottom: none;
+            padding-bottom: 48px;
+            margin-bottom: 40px;
+
+            .minibox {
+                padding: 32px 20px 20px;
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            span {
+                color: #00aeff;
+                font-size: 18px;
+            }
+
+            h4 {
+                font-size: 24px;
+                text-decoration: underline;
+                margin: 8px 0 16px;
+            }
+
+            p {
+                font-size: 18px;
+                color: #878787;
+                line-height: 1.6;
+                margin-bottom: 24px;
+            }
+
+            .bottom {
+                justify-content: space-around;
+                width: 100%;
+                border: 1px solid #d2d2d2;
+                border-left: 0;
+                border-right: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0 10px;
+                position: absolute;
+                left: 0;
+                top: 228px;
+
+                .icon {
+                    margin: 16px 0;
+                    display: flex;
+
+                    i {
+                        color: #d7d7d7;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+
+        .padding-bottom {
+            padding-bottom: 64px;
+        }
+
+        .border-bottom {
+            border-bottom: #d2d2d2;
+            padding-bottom: 48px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .parent2 {
+            flex-direction: column;
+            width: 100%;
+            .card {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 576px) {
+        .parent1{
+            .textbox{
+                h3{
+                    width: 300px;
+                }
+            }
+        }
+        
+    }
+}

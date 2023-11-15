@@ -1,0 +1,55 @@
+#lighthouse {
+    background-image: url("https://preview.colorlib.com/theme/konato/assets/img/hero/h1_hero1.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: #a1a1a1;
+    // min-height: 100vh;
+    padding: 160px 0;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+    .textbox {
+        width: 550px;
+
+        span {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 56px;
+            margin: 16px 0 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        h4 {
+            font-size: 48px;
+            margin: 20px 0 40px;
+        }
+
+        .btn {
+            background-color: #00AEFF;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 12px 30px;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #073e57;
+            }
+        }
+
+    }
+    
+    @media screen and (max-width: 576px) {
+        .textbox{
+            width: 300px;
+        }
+    }
+}

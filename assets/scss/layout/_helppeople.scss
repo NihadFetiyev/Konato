@@ -1,0 +1,46 @@
+#helppeople{
+    background-image: url("https://preview.colorlib.com/theme/konato/assets/img/gallery/section-bg1.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    color: #ffffff;
+    padding: 96px 0;
+    .textbox{
+        width: 100%;
+        text-align: center;
+        h2{
+            font-size: 40px;
+            margin-bottom: 32px;
+        }
+    }
+    .parent{
+        background-color: #00A0EB;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .box{
+            width: 33.33%;
+            text-align: center;
+            padding: 48px 32px;
+            box-shadow: rgba(135, 135, 135, 0.35) 0px 0px 5px;
+            h4{
+                font-size: 24px;
+                margin: 32px 0;
+            }
+            p{
+                color: #ebebeb;
+                line-height: 1.4;
+            }
+            img{
+                width: 50px;
+            }
+        }
+    }
+    @media screen and (max-width:992px) {
+        .parent{
+            .box{
+                width: 100%;
+            }
+        }        
+    }
+}
